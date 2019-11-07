@@ -4,12 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <title>NPM Dependency Check</title>
 </head>
 <body>
-    <form action="http://localhost:8080/example" method="POST">
-        Git Repo: <input type="text" name="gitRepo"><br>
-       <button type="submit">Send to backend</button>
-      </form>
+    <div id="app">
+        <div id="main">
+            <header>
+                <div class="container header-section">
+                    <h1>NPM Dependency Checker</h1>
+                    <div class="input-group input-group-lg input-group--username">
+                         <input id = "repoInput" type="text" placeholder="Git Repo" autocapitalize="off" autocorrect="off" class="form-control project-input">
+                          <span class="input-group-btn">
+                              <button id= "subButn" type="button" class="btn btn-secondary">Check</button>
+                            </span>
+                        </div>
+                </div>
+        </div>
+    </header>
+        <div class="container container--summary">
+                <h1>Dependencies</h1>
+
+        </div>
+
+    </div>
+    <script src="logic.js"></script>
 </body>
 </html>

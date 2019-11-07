@@ -14,6 +14,10 @@ const isDev = process.env.NODE_ENV !== 'production';
 const port = isDev ? 8080 : 80;
 
 app.use(cors({ origin: '*' }));
+app.options('/products/:id', cors()) // enable pre-flight request for DELETE request
+app.delete('/products/:id', cors(), function (req, res, next) {
+  res.json({msg: 'This is CORS-enabled for all origins!'})
+})
 
 app.get('/dependencies', async (req, res) => {
 
