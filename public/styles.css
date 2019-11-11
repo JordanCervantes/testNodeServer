@@ -89,8 +89,6 @@
         font-weight: 300;
         margin-bottom: 2rem;
         color: white;
-        padding-top: 100px;
-        padding-bottom: 100px;
       }
       .input-group--username {
         position: relative;
@@ -159,15 +157,6 @@
       }
       .btn:focus {
           box-shadow: 0 0 0 2px rgba(153, 236, 167, 0.5);
-      }
-      #u-addon {
-        background: -webkit-linear-gradient(335deg, #ff79aa, #b743ff);
-        background: linear-gradient(115deg, #ff79aa, #b743ff);
-        box-shadow: 0 5px 20px -2px rgba(200, 50, 150, 0.7);
-        border: none;
-        color: white;
-        font-weight: 700;
-        padding: 0 0.75rem;
       }
       .header-section {
         max-width: 900px;
@@ -805,7 +794,6 @@ body { font-family: sans-serif; }
 /* ---- table-like ---- */
 
 .table-like {
-  background: #DDD;
   max-width: 1200px;
   list-style: none;
   margin: 0;
@@ -825,16 +813,8 @@ body { font-family: sans-serif; }
   width: 100%;
   clear: both;
   border-top: 1px solid;
+  text-align: center;
+  padding: 25px;
 }
 
-
-.table-like__item > * {
-  display: inline-block;
-  padding: 4px 4px;
-}
-
-.table-like__item .name { width: 30%; }
-.table-like__item .symbol { width: 10%; }
-.table-like__item .weight { width: 15%; }
-.table-like__item .number { width: 10%; }
-.table-like__item .category { width: 20%; }
+.hidden{display:none;}
